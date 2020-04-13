@@ -13,7 +13,9 @@ const repositories = [];
 
 app.get("/repositories", (request, response) => {
   // TODO
+  const { title } = request.query;
 
+  return response.json(repositories);
 
 });
 
